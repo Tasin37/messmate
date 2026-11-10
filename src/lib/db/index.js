@@ -1,4 +1,15 @@
 import pg from 'pg';
+import fs from 'node:fs';
+
+if (fs.existsSync('.env.local')) {
+  try {
+    process.loadEnvFile('.env.local');
+  } catch {}
+} else if (fs.existsSync('.env')) {
+  try {
+    process.loadEnvFile('.env');
+  } catch {}
+}
 
 const { Pool } = pg;
 

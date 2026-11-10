@@ -46,7 +46,7 @@ on available hours and design complexity.
 
 ## Phase 4 --- Shared bills and payments 
 
--   Dedicated "Boss" panel to control shared bills like apartment rent, electricity bill, internet bill, maid (bua) bill, others.
+-   Dedicated "Boss" panel to control shared bills like apartment rent, electricity bill,      internet bill, maid (bua) bill, others.
 -   Recurring bill templates.
 -   Equal/weighted/custom allocations.
 -   Deposits and payment methods.

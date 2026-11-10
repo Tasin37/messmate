@@ -3,6 +3,16 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+if (fs.existsSync('.env.local')) {
+  try {
+    process.loadEnvFile('.env.local');
+  } catch {}
+} else if (fs.existsSync('.env')) {
+  try {
+    process.loadEnvFile('.env');
+  } catch {}
+}
+
 const { Pool } = pg;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
